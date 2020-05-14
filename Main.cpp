@@ -2,6 +2,7 @@
 #include <math.h>
 #include <cmath>
 #include "QuadraticFormula.h"
+#include "Triangle.h"
 
 using namespace std;
 
