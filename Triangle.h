@@ -25,9 +25,9 @@ public:
 	double getSide2();
 	double getSide3();
 
-	void setSide1();
-	void setSide2();
-	void setSide3();
+	void setSide1(double);
+	void setSide2(double);
+	void setSide3(double);
 
 	double calculateArea();
 	double calculateVolume();
