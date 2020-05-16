@@ -19,17 +19,17 @@ QuadraticFormula::~QuadraticFormula()
 
 }
 
-int QuadraticFormula::getA()
+double QuadraticFormula::getA()
 {
 	return newQFa;
 }
 
-int QuadraticFormula::getB()
+double QuadraticFormula::getB()
 {
 	return newQFb;
 }
 
-int QuadraticFormula::getC()
+double QuadraticFormula::getC()
 {
 	return newQFc;
 }
@@ -52,7 +52,8 @@ void QuadraticFormula::setC(double c)
 double QuadraticFormula::calculateQF()
 {
 	/*-b squared +- sqrt((b squared + 4ac)(/2a)) */
-	cout << "Positive is: " << -newQFb + (sqrt((newQFb * newQFb) - (4 * newQFa * newQFc)) / (2 * newQFa));
-	cout << "\nNegative is: " << -newQFb - (sqrt((newQFb * newQFb) - (4 * newQFa * newQFc)) / (2 * newQFa));
+	/*cout << "Positive is: " << -newQFb + (sqrt((newQFb * newQFb) - (4 * newQFa * newQFc)) / (2 * newQFa));
+	cout << "\nNegative is: " << -newQFb - (sqrt((newQFb * newQFb) - (4 * newQFa * newQFc)) / (2 * newQFa));*/
+	//this is wrong :(
 	return 0;
 }

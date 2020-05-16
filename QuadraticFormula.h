@@ -12,16 +12,16 @@ using namespace std;
 class QuadraticFormula
 {
 private:
-	int newQFa, newQFb, newQFc;
+	double newQFa, newQFb, newQFc;
 
 public:
 	QuadraticFormula();
 	QuadraticFormula(double, double, double);
 	~QuadraticFormula();
 
-	int getA();
-	int getB();
-	int getC();
+	double getA();
+	double getB();
+	double getC();
 
 	void setA(double);
 	void setB(double);
