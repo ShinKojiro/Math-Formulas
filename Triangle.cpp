@@ -27,7 +27,16 @@ Triangle::~Triangle()
 
 double Triangle::getSideA()
 {
-	return sideA;
+	if (sideA == 0)
+	{
+		cout << "unknown";
+		return 0;
+	}
+	else
+	{
+		return sideA;
+	}
+	
 }
 
 double Triangle::getSideB()
@@ -87,29 +96,49 @@ void Triangle::setAngleC(double aC)
 
 void Triangle::triangleInput()
 {
-	
+	double sideA, sideB, sideC, angleA, angleB, angleC;
+
+	cout << "Enter the sides of the triangle: a, b ,c. 0 for unknown side: ";
+	cin >> sideA >> sideB >> sideC;
+
+	cout << endl << "Enter the angles of the triangle: A, B, C. 0 for unknown angle: ";
+	cin >> angleA >> angleB >> angleC;
+
+	Triangle newTriangle(sideA, sideB, sideC, angleA, angleB, angleC);
+
+	cout << endl << "The triangles specifications are: " << endl;
+	cout << "side a = " << newTriangle.getSideA() << endl;
+	cout << "side b = " << newTriangle.getSideB() << endl;
+	cout << "side c = " << newTriangle.getSideC() << endl;
+	cout << "angle A = " << newTriangle.getAngleA() << endl;
+	cout << "angle B = " << newTriangle.getAngleB() << endl;
+	cout << "angle C = " << newTriangle.getAngleC() << endl;
+
 }
 
-double Triangle::calculateHeight()
+void Triangle::calculateHeight()
 {
 	//figure out how to put this into programming logic
 	//sinA = opposite/hypotenuse --- sinA = h/b
 	//h = b * sinA
-	return 0;
+	double height;
+
+	height = getSideB() * sin(getAngleA());
+	cout << "The hight of this triangle is " << height << endl;
 }
 
-double Triangle::calculateArea()
+void Triangle::calculateArea()
 {
 	// Area = 1/2b * c * sinA = 1/2a *b * sinC = 1/2a * c * SinB
-	return 0;
+	
 }
 
-double Triangle::calculateVolume()
+void Triangle::calculateVolume()
 {
-	return 0;
+	
 }
 
-double Triangle::calculatePerimeter()
+void Triangle::calculatePerimeter()
 {
-	return 0;
+	
 }

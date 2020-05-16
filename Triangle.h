@@ -5,6 +5,8 @@
 #include <iostream>
 #include <string>
 
+#define PI 3.14159265
+
 using namespace std;
 
 #ifndef TRIANGLE_H
@@ -41,10 +43,10 @@ public:
 	void setAngleC(double);
 
 	void triangleInput();
-	double calculateHeight();
-	double calculateArea();
-	double calculateVolume();
-	double calculatePerimeter();
+	void calculateHeight();
+	void calculateArea();
+	void calculateVolume();
+	void calculatePerimeter();
 };
 
 #endif // !TRIANGLE_H
