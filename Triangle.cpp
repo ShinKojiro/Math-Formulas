@@ -2,16 +2,22 @@
 
 Triangle::Triangle()
 {
-	side1 = 0;
-	side2 = 0;
-	side3 = 0;
+	sideA = 0;
+	sideA = 0;
+	sideA = 0;
+	angleA = 0;
+	angleB = 0;
+	angleC = 0;
 }
 
-Triangle::Triangle(double s1, double s2, double s3)
+Triangle::Triangle(double sA, double sB, double sC, double aA, double aB, double aC)
 {
-	side1 = s1;
-	side2 = s2;
-	side3 = s3;
+	sideA = sA;
+	sideB = sB;
+	sideC = sC;
+	angleA = aA;
+	angleB = aB;
+	angleC = aC;
 }
 
 Triangle::~Triangle()
@@ -19,32 +25,55 @@ Triangle::~Triangle()
 
 }
 
-double Triangle::getSide1()
+double Triangle::getSideA()
 {
-	return side1;
+	return sideA;
 }
 
-double Triangle::getSide2()
+double Triangle::getSideB()
 {
-	return side2;
+	return sideB;
 }
 
-double Triangle::getSide3()
+double Triangle::getSideC()
 {
-	return side3;
+	return sideC;
 }
 
-void Triangle::setSide1(double s1)
+void Triangle::setSideA(double sA)
 {
-	side1 = s1;
+	sideA = sA;
 }
 
-void Triangle::setSide2(double s2)
+void Triangle::setSideB(double sB)
 {
-	side2 = s2;
+	sideB = sB;
 }
 
-void Triangle::setSide3(double s3)
+void Triangle::setSideC(double sC)
 {
-	side3 = s3;
+	sideC = sC;
+}
+
+double Triangle::calculateHeight()
+{
+	//figure out how to put this into programming logic
+	//sinA = opposite/hypotenuse --- sinA = h/b
+	//h = b * sinA
+	
+}
+
+double Triangle::calculateArea()
+{
+	// Area = 1/2b * c * sinA = 1/2a *b * sinC = 1/2a * c * SinB
+}
+
+double Triangle::calculateVolume()
+{
+
+}
+
+double Triangle::calculatePerimeter()
+{
+
 }

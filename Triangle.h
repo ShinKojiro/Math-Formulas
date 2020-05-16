@@ -14,23 +14,32 @@ using namespace std;
 class Triangle
 {
 private:
-	double side1, side2, side3;
+	double sideA, sideB, sideC, angleA, angleB, angleC;
 
 public:
 	Triangle();
-	Triangle(double, double, double);
+	Triangle(double, double, double, double, double, double);
+	// Side A, Side B, Side C, Angle A, Angle B, Angle C. 0 = unknown angle or side.
 	~Triangle();
 
-	double getSide1();
-	double getSide2();
-	double getSide3();
+	double getSideA();
+	double getSideB();
+	double getSideC();
+	double getAngleA();
+	double getAngleB();
+	double getAngleC();
 
-	void setSide1(double);
-	void setSide2(double);
-	void setSide3(double);
+	void setSideA(double);
+	void setSideB(double);
+	void setSideC(double);
+	void setAngleA(double);
+	void setAngleB(double);
+	void setAngleC(double);
 
+	double calculateHeight();
 	double calculateArea();
 	double calculateVolume();
+	double calculatePerimeter();
 };
 
 #endif // !TRIANGLE_H
