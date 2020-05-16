@@ -18,6 +18,9 @@ private:
 	double sideA, sideB, sideC, angleA, angleB, angleC;
 
 public:
+
+	/*double nSideA, nSideB, nSideC, nAngleA, nAngleB, nAngleC;*/
+
 	Triangle();
 	Triangle(double, double, double, double, double, double);
 	// Side A, Side B, Side C, Angle A, Angle B, Angle C. 0 = unknown angle or side.
@@ -37,6 +40,7 @@ public:
 	void setAngleB(double);
 	void setAngleC(double);
 
+	void triangleInput();
 	double calculateHeight();
 	double calculateArea();
 	double calculateVolume();

@@ -85,6 +85,11 @@ void Triangle::setAngleC(double aC)
 	angleC = aC;
 }
 
+void Triangle::triangleInput()
+{
+	
+}
+
 double Triangle::calculateHeight()
 {
 	//figure out how to put this into programming logic
