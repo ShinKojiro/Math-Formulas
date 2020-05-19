@@ -17,7 +17,7 @@ using namespace std;
 class Triangle
 {
 private:
-	double sideA, sideB, sideC, angleA, angleB, angleC;
+	double sideA, sideB, sideC, angleA, angleB, angleC, height, area, volume, perimeter;
 
 public:
 
@@ -34,6 +34,10 @@ public:
 	double getAngleA();
 	double getAngleB();
 	double getAngleC();
+	double getHeight();
+	double getArea();
+	double getVolume();
+	double getPerimeter();
 
 	void setSideA(double);
 	void setSideB(double);
@@ -41,11 +45,14 @@ public:
 	void setAngleA(double);
 	void setAngleB(double);
 	void setAngleC(double);
+	void setHeight(double);
+	void setArea(double);
+	void setVolume(double);
+	void setPerimeter(double);
 
 	void triangleInput();
 	void calculateHeight();
 	void calculateArea();
-	void calculateVolume();
 	void calculatePerimeter();
 };
 

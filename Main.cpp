@@ -30,19 +30,17 @@ int main()
 
 
 	/*-b squared +- sqrt((b squared + 4ac)(/2a)) */
-	// Areas
+	// Areas, volumes, etc.
 		//Triangle
 
 	Triangle newTriangle;
-
 	newTriangle.triangleInput();
-
 	newTriangle.calculateHeight();
 	newTriangle.calculateArea();
-	newTriangle.calculateVolume();
 	newTriangle.calculatePerimeter();
 
-	// Volumes
 	// more soon
+	
+	
 
 }
