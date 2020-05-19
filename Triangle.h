@@ -36,7 +36,6 @@ public:
 	double getAngleC();
 	double getHeight();
 	double getArea();
-	double getVolume();
 	double getPerimeter();
 
 	void setSideA(double);
@@ -47,7 +46,6 @@ public:
 	void setAngleC(double);
 	void setHeight(double);
 	void setArea(double);
-	void setVolume(double);
 	void setPerimeter(double);
 
 	void triangleInput();

@@ -10,7 +10,6 @@ Triangle::Triangle()
 	angleC = 0;
 	height = 0;
 	area = 0;
-	volume = 0;
 	perimeter = 0;
 }
 
@@ -24,7 +23,6 @@ Triangle::Triangle(double sA, double sB, double sC, double aA, double aB, double
 	angleC = aC;
 	height = 0;
 	area = 0;
-	volume = 0;
 	perimeter = 0;
 }
 
@@ -82,11 +80,6 @@ double Triangle::getArea()
 	return area;
 }
 
-double Triangle::getVolume()
-{
-	return volume;
-}
-
 double Triangle::getPerimeter()
 {
 	return perimeter;
@@ -130,11 +123,6 @@ void Triangle::setHeight(double h)
 void Triangle::setArea(double a)
 {
 	area = a;
-}
-
-void Triangle::setVolume(double v)
-{
-	volume = v;
 }
 
 void Triangle::setPerimeter(double p)
